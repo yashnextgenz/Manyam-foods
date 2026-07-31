@@ -21,9 +21,9 @@ const serviceLinks = [
 ];
 
 const socialLinks = [
-  { href: 'https://facebook.com', icon: Facebook, label: 'Facebook', color: 'hover:bg-[#1877F2]' },
-  { href: 'https://instagram.com', icon: Instagram, label: 'Instagram', color: 'hover:bg-[#E4405F]' },
-  { href: 'https://wa.me/919441116552', icon: MessageCircle, label: 'WhatsApp', color: 'hover:bg-[#25D366]' },
+  { href: 'https://facebook.com', icon: Facebook, label: 'Facebook', color: 'hover:bg-primary' },
+  { href: 'https://instagram.com', icon: Instagram, label: 'Instagram', color: 'hover:bg-prmiary' },
+  { href: 'https://wa.me/919441116552', icon: MessageCircle, label: 'WhatsApp', color: 'hover:bg-primary' },
 ];
 
 export default function Footer() {
