@@ -6,7 +6,7 @@ import Stats from '@/components/Stats';
 import CTA from '@/components/CTA';
 import Button from '@/components/Button';
 import ScrollReveal from '@/components/ScrollReveal';
-
+import Image from "next/image";
 const services = [
   {
     icon: Droplets,
@@ -107,56 +107,7 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* ========== DETAILED: PACKAGED DRINKING WATER ========== */}
-      <section className="section-padding bg-light-green/30 dark:bg-primary/5">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <p className="text-primary font-semibold uppercase tracking-wider text-sm mb-2">Our Core Product</p>
-              <h2 className="text-2xl md:text-3xl font-bold text-dark-text dark:text-dark-text-light leading-tight">
-                Packaged Drinking Water
-              </h2>
-              <p className="text-medium-text dark:text-dark-text-muted mt-4 leading-relaxed">
-                We use multi-stage purification technologies, including RO, UV, and ozonization, to ensure every bottle delivers safe, pure, and hygienic drinking water that meets stringent quality standards.
-              </p>
-              <div className="grid grid-cols-3 gap-4 mt-6">
-                {['500ml', '1 Litre', '2 Litre'].map((size) => (
-                  <div key={size} className="glass-card glow-border rounded-xl p-4 text-center hover:-translate-y-1 hover:shadow-md transition-all duration-300">
-                    <Droplets className="w-6 h-6 text-primary mx-auto" />
-                    <p className="font-semibold text-sm mt-2 text-dark-text dark:text-dark-text-light">{size}</p>
-                    <p className="text-xs text-medium-text dark:text-dark-text-muted mt-0.5">Bottles</p>
-                  </div>
-                ))}
-              </div>
-              <div className="mt-6">
-                <Button variant="secondary" href="/products">
-                  View Products <ArrowRight className="w-4 h-4" />
-                </Button>
-              </div>
-            </div>
-            <div className="relative">
-              <div className="grid grid-cols-2 gap-4">
-                <div className="glass-card rounded-xl p-6 hover:-translate-y-1 transition-all duration-300">
-                  <Droplets className="w-10 h-10 text-primary/40 mx-auto" />
-                  <p className="text-xs font-medium text-medium-text dark:text-dark-text-muted mt-3 text-center">Source Water</p>
-                </div>
-                <div className="glass-card rounded-xl p-6 hover:-translate-y-1 transition-all duration-300 mt-8">
-                  <Droplets className="w-14 h-14 text-primary/40 mx-auto" />
-                  <p className="text-xs font-medium text-medium-text dark:text-dark-text-muted mt-3 text-center">RO Purified</p>
-                </div>
-                <div className="glass-card rounded-xl p-6 hover:-translate-y-1 transition-all duration-300 -mt-8">
-                  <Droplets className="w-14 h-14 text-primary/40 mx-auto" />
-                  <p className="text-xs font-medium text-medium-text dark:text-dark-text-muted mt-3 text-center">UV Treated</p>
-                </div>
-                <div className="glass-card rounded-xl p-6 hover:-translate-y-1 transition-all duration-300">
-                  <Droplets className="w-10 h-10 text-primary/40 mx-auto" />
-                  <p className="text-xs font-medium text-medium-text dark:text-dark-text-muted mt-3 text-center">Ozonized</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+
 
       {/* ========== DETAILED: GOLI SODA ========== */}
       <section className="section-padding bg-white dark:bg-dark-bg">
@@ -166,10 +117,14 @@ export default function ServicesPage() {
               <div className="glass-card shimmer-sweep rounded-2xl overflow-hidden hover:shadow-xl transition-shadow duration-500">
                 <div className="aspect-[4/3] bg-primary/10 flex items-center justify-center">
                   <div className="text-center p-8">
-                    <Beaker className="w-20 h-20 text-primary/30 mx-auto" />
-                    <p className="text-primary/50 dark:text-primary/40 font-semibold mt-4">Goli Soda Products</p>
-                    <p className="text-xs text-medium-text/50 dark:text-dark-text-muted/50 mt-1">Replace with actual product photos</p>
-                  </div>
+                  <Image
+    src="/images/golisoda.jpeg"
+    alt="Goli Soda"
+    width={400}
+    height={400}
+    className="mx-auto rounded-lg object-contain"
+  />
+                   </div>
                 </div>
               </div>
             </div>
