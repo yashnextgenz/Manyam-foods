@@ -67,7 +67,7 @@ export default function ProductCard({ name, image, category, description, onClic
       }}
     >
       {/* Image Container */}
-      <div className={`aspect-[4/3] bg-gradient-to-br ${colorClass} flex items-center justify-center relative overflow-hidden`}>
+      <div className={`aspect-[2/3] bg-gradient-to-br ${colorClass} flex items-center justify-center relative overflow-hidden`}>
         {image ? (
           <Image
             src={image}

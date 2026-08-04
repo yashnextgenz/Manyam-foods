@@ -13,11 +13,36 @@ import Marquee from '@/components/Marquee';
 import FAQ from '@/components/FAQ';
 
 const products = [
-  { name: '500ml Bottle', category: 'Packaged Water', description: 'Compact and convenient for on-the-go hydration. Perfect for personal use.', image: '/images/product-500ml.png' },
-  { name: '1 Litre Bottle', category: 'Packaged Water', description: 'Ideal size for daily hydration needs at home and office.', image: '/images/product-1litre.png' },
-  { name: '2 Litre Bottle', category: 'Packaged Water', description: 'Great for families, gatherings, and extended hydration needs.', image: '/images/product-2litre.png' },
-  { name: 'Soft Soda', category: 'Beverages', description: 'Traditional goli soda with authentic taste, refreshing and natural.' },
-  { name: 'Upcoming Drinks', category: 'New Products', description: 'Exciting new beverages in development. Stay tuned for launches.' },
+  {
+    name: '500ml Bottle',
+    category: 'Packaged Water',
+    description: 'Compact and convenient for on-the-go hydration. Perfect for personal use.',
+    image: '/images/pro500ml.jpeg'
+  },
+  {
+    name: '1 Litre Bottle',
+    category: 'Packaged Water',
+    description: 'Ideal size for daily hydration needs at home and office.',
+    image: '/images/pro1l.jpeg'
+  },
+  {
+    name: '2 Litre Bottle',
+    category: 'Packaged Water',
+    description: 'Great for families, gatherings, and extended hydration needs.',
+    image: '/images/pro2l.jpeg'
+  },
+  {
+    name: '20 Litre Bottle',
+    category: 'Packaged Water',
+    description: 'Large-capacity drinking water bottle, ideal for homes, offices, schools, and commercial use.',
+    image: '/images/pro20l.jpeg'
+  },
+  {
+    name: 'Goli Soda',
+    category: 'Beverages',
+    description: 'Refreshing traditional marble-sealed soft drink available in a variety of delicious flavors.',
+    image: '/images/golisoda.jpeg'
+  }
 ];
 
 const features = [
@@ -114,6 +139,7 @@ export default function HomePage() {
                   category={product.category}
                   description={product.description}
                   image={product.image}
+                  
                 />
               </ScrollReveal>
             ))}

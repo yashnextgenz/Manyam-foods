@@ -1,4 +1,6 @@
 'use client';
+import Image from "next/image";
+
 
 import { useState, useEffect, useCallback } from 'react';
 import Link from 'next/link';
@@ -63,17 +65,25 @@ export default function Navbar() {
             className="flex min-w-0 items-center gap-2 group"
             aria-label="Manyam Foods - Home"
           >
-            <div className="w-10 h-10 shrink-0 bg-primary rounded-full flex items-center justify-center group-hover:scale-110 transition-all duration-300 shadow-md shadow-primary/20 group-hover:shadow-lg group-hover:shadow-primary/30">
-              <Droplets className="w-5 h-5 text-white" />
-            </div>
-            <div className="flex min-w-0 flex-col">
-              <span className="truncate text-base sm:text-lg font-bold text-primary leading-tight">
-                Manyam Foods
-              </span>
-              <span className="truncate text-[9px] sm:text-[10px] text-medium-text dark:text-dark-text-muted tracking-wider uppercase leading-tight">
-                Private Limited
-              </span>
-            </div>
+          
+            <div className="flex items-center gap-2">
+  <Image
+    src="/images/image.png" // Place your logo in the public folder
+    alt="Manyam Foods Logo"
+    width={42}
+    height={42}
+    className="h-10 w-10 sm:h-12 sm:w-12 object-contain flex-shrink-0"
+  />
+
+  <div className="flex min-w-0 flex-col">
+    <span className="truncate text-base sm:text-lg font-bold text-[text-[#123B6D] leading-tight">
+      Manyam Foods
+    </span>
+    <span className="truncate text-[9px] sm:text-[10px] text-medium-text dark:text-dark-text-muted tracking-wider uppercase leading-tight">
+      Private Limited
+    </span>
+  </div>
+</div>
           </Link>
 
           {/* Desktop Navigation */}
@@ -86,16 +96,16 @@ export default function Navbar() {
                     href={link.href}
                     className={`relative py-2 px-3 text-sm font-medium transition-colors duration-300 ${
                       isActive
-                        ? 'text-primary'
-                        : 'text-dark-text dark:text-dark-text-light group-hover:text-primary'
+                        ? 'text-[#123B6D]'
+                        : 'text-dark-text dark:text-dark-text-light group-hover:text-[#123B6D]'
                     }`}
                   >
                     {link.label}
                     {isActive && (
-                      <span className="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-primary to-primary-light rounded-full origin-left scale-x-100 transition-transform duration-300" />
+                      <span className="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-[#123B6D] to-[#123B6D] rounded-full origin-left scale-x-100 transition-transform duration-300" />
                     )}
                     {!isActive && (
-                      <span className="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-primary to-primary-light rounded-full origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-300" />
+                      <span className="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-[#123B6D] to-[#123B6D] rounded-full origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-300" />
                     )}
                   </Link>
                 </div>
@@ -108,7 +118,7 @@ export default function Navbar() {
        
             <Link
               href="/contact"
-              className="relative inline-flex items-center gap-2 bg-gradient-to-r from-primary to-primary-dark text-white px-5 py-2.5 rounded-lg text-sm font-semibold transition-all duration-300 hover:shadow-lg hover:shadow-primary/30 cta-pulse btn-shimmer overflow-hidden"
+              className="relative inline-flex items-center gap-2 bg-gradient-to-r from-[#123B6D] to-[#123B6D] text-white px-5 py-2.5 rounded-lg text-sm font-semibold transition-all duration-300 hover:shadow-lg hover:shadow-primary/30 cta-pulse btn-shimmer overflow-hidden"
             >
               Request New Enquiry
               <span className="absolute inset-0 rounded-lg bg-gradient-to-r from-transparent via-white/10 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300" />
