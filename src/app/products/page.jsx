@@ -13,7 +13,7 @@ const allProducts = [
   { id: 2, name: '1 Litre Bottle', category: 'Packaged Water', description: 'The perfect everyday size for home, office, and personal hydration. Our most popular format.', image: '/images/pro1l.jpeg' },
   { id: 4, name: '2 Litre Bottle', category: 'Packaged Water', description: 'Great for families, small gatherings, and extended hydration needs throughout the day.', image: '/images/pro2l.jpeg' },
  { id: 6, name: '20 Litre Jar', category: 'Packaged Water', description: 'Bulk water solution for offices, restaurants, hotels, and institutions. The most economical choice for large-scale use.',image: '/images/pro20l.jpeg' },
-{ id: 8, name: 'Goli Soda', category: 'Beverages', description: 'Zesty lemon-flavored goli soda combining traditional charm with refreshing citrus taste.' ,image: '/images/golisoda.jpeg' },
+{ id: 8, name: 'Goli Soda', category: 'Beverages', description: 'Zesty lemon-flavored goli soda combining traditional charm with refreshing citrus taste.' ,image: '/images/golisoda3.png' },
  ];
 
 const categories = ['All', 'Packaged Water', 'Beverages'];

@@ -41,7 +41,7 @@ const products = [
     name: 'Goli Soda',
     category: 'Beverages',
     description: 'Refreshing traditional marble-sealed soft drink available in a variety of delicious flavors.',
-    image: '/images/golisoda.jpeg'
+    image: '/images/golisoda3.png'
   }
 ];
 
