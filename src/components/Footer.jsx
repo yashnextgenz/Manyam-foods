@@ -22,7 +22,7 @@ const serviceLinks = [
 
 const socialLinks = [
   { href: 'https://facebook.com', icon: Facebook, label: 'Facebook', color: 'hover:bg-primary' },
-  { href: 'https://instagram.com', icon: Instagram, label: 'Instagram', color: 'hover:bg-prmiary' },
+  { href: 'https://www.instagram.com/manyamwater?utm_source=qr&igsh=azIwMGdrYmJmMms2', icon: Instagram, label: 'Instagram', color: 'hover:bg-prmiary' },
   { href: 'https://wa.me/919441116552', icon: MessageCircle, label: 'WhatsApp', color: 'hover:bg-primary' },
 ];
 

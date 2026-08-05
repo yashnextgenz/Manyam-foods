@@ -20,7 +20,7 @@ const businessHours = [
 
 const socialLinks = [
   { icon: Facebook, label: 'Facebook', href: 'https://facebook.com', hoverFrom: 'hover:from-primary', hoverTo: 'hover:to-primary-dark', hoverShadow: 'hover:shadow-blue-500/30' },
-  { icon: Instagram, label: 'Instagram', href: 'https://instagram.com', hoverFrom: 'hover:from-primary', hoverTo: 'hover:to-primary-dark', hoverShadow: 'hover:shadow-pink-500/30' },
+  { icon: Instagram, label: 'Instagram', href: 'https://www.instagram.com/manyamwater?utm_source=qr&igsh=azIwMGdrYmJmMms2', hoverFrom: 'hover:from-primary', hoverTo: 'hover:to-primary-dark', hoverShadow: 'hover:shadow-pink-500/30' },
   { icon: MessageCircle, label: 'WhatsApp', href: 'https://wa.me/919441116552', hoverFrom: 'hover:from-primary', hoverTo: 'hover:to-primary-dark', hoverShadow: 'hover:shadow-[#25D366]/30' },
 ];
 
