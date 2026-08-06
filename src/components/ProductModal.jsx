@@ -150,7 +150,7 @@ export default function ProductModal({ product, isOpen, onClose }) {
               </button>
             </div>
             <a
-              href={`https://wa.me/919441116552?text=${encodeURIComponent(`Hi, I'm interested in ${product.name} (${product.category}). Quantity: ${quantity}. Please share pricing details.`)}`}
+              href={`https://wa.me/919177418031?text=${encodeURIComponent(`Hi, I'm interested in ${product.name} (${product.category}). Quantity: ${quantity}. Please share pricing details.`)}`}
               target="_blank"
               rel="noopener noreferrer"
               className="flex-1 inline-flex items-center justify-center gap-2 bg-gradient-to-r from-primary to-primary-dark text-white font-semibold rounded-xl px-6 py-3 hover:shadow-lg hover:shadow-primary/25 transition-all duration-300 hover:-translate-y-0.5 text-sm btn-shimmer overflow-hidden"

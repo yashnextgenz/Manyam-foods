@@ -193,7 +193,7 @@ export default function Navbar() {
             </div>
             <div className="mt-8 p-4 bg-light-green/30 dark:bg-primary/10 backdrop-blur-sm rounded-xl border border-primary/10 dark:border-primary/20">
               <p className="text-sm font-semibold text-primary">Contact Us</p>
-              <p className="text-sm text-medium-text dark:text-dark-text-muted mt-1">+91 9441116552</p>
+              <p className="text-sm text-medium-text dark:text-dark-text-muted mt-1">+91 9177418031</p>
               <p className="text-sm text-medium-text dark:text-dark-text-muted">manyamfoods45@gmail.com</p>
             </div>
           </div>

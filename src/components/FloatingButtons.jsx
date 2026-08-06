@@ -81,7 +81,7 @@ export default function FloatingButtons() {
           Chat on WhatsApp
         </span>
         <a
-          href="https://wa.me/919441116552?text=Hi%20Manyam%20Foods%2C%20I%27m%20interested%20in%20your%20products."
+          href="https://wa.me/919177418031?text=Hi%20Manyam%20Foods%2C%20I%27m%20interested%20in%20your%20products."
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Chat on WhatsApp"

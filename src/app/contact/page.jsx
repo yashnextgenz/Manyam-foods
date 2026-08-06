@@ -8,7 +8,7 @@ import CTA from '@/components/CTA';
 import ScrollReveal from '@/components/ScrollReveal';
 
 const contactCards = [
-  { icon: Phone, title: 'Phone', value: '+91 9441116552', href: 'tel:+919441116552', color: 'from-primary to-primary-dark', desc: 'Mon-Sat, 9AM-6PM' },
+  { icon: Phone, title: 'Phone', value: '+91 9177418031', href: 'tel:+919177418031', color: 'from-primary to-primary-dark', desc: 'Mon-Sat, 9AM-6PM' },
   { icon: Mail, title: 'Email', value: 'manyamfoods45@gmail.com', href: 'mailto:manyamfoods45@gmail.com', color: 'from-primary to-primary-dark', desc: 'We reply within 24hrs' },
   { icon: MapPin, title: 'Address', value: 'Vagalla, Varipalli, Kalikiri, Chittoor, AP 517234', href: 'https://maps.google.com/?q=13.63,78.16', color: 'from-primary to-primary-dark', desc: 'View on Google Maps' },
 ];
@@ -21,7 +21,7 @@ const businessHours = [
 const socialLinks = [
   { icon: Facebook, label: 'Facebook', href: 'https://facebook.com', hoverFrom: 'hover:from-primary', hoverTo: 'hover:to-primary-dark', hoverShadow: 'hover:shadow-blue-500/30' },
   { icon: Instagram, label: 'Instagram', href: 'https://www.instagram.com/manyamwater?utm_source=qr&igsh=azIwMGdrYmJmMms2', hoverFrom: 'hover:from-primary', hoverTo: 'hover:to-primary-dark', hoverShadow: 'hover:shadow-pink-500/30' },
-  { icon: MessageCircle, label: 'WhatsApp', href: 'https://wa.me/919441116552', hoverFrom: 'hover:from-primary', hoverTo: 'hover:to-primary-dark', hoverShadow: 'hover:shadow-[#25D366]/30' },
+  { icon: MessageCircle, label: 'WhatsApp', href: 'https://wa.me/919177418031', hoverFrom: 'hover:from-primary', hoverTo: 'hover:to-primary-dark', hoverShadow: 'hover:shadow-[#25D366]/30' },
 ];
 
 const faqItems = [
@@ -214,7 +214,7 @@ export default function ContactPage() {
           <ScrollReveal delay={250}>
             <p className="text-center mt-8 text-sm text-medium-text dark:text-dark-text-muted">
               Can&apos;t find what you&apos;re looking for?{' '}
-              <a href="tel:+919441116552" className="text-primary font-semibold link-underline">Call us directly</a>
+              <a href="tel:+919177418031" className="text-primary font-semibold link-underline">Call us directly</a>
               {' or '}
               <Link href="/" className="text-primary font-semibold link-underline">browse our products</Link>
               {'.'}

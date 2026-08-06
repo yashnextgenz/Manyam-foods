@@ -23,7 +23,7 @@ const serviceLinks = [
 const socialLinks = [
   { href: 'https://facebook.com', icon: Facebook, label: 'Facebook', color: 'hover:bg-primary' },
   { href: 'https://www.instagram.com/manyamwater?utm_source=qr&igsh=azIwMGdrYmJmMms2', icon: Instagram, label: 'Instagram', color: 'hover:bg-prmiary' },
-  { href: 'https://wa.me/919441116552', icon: MessageCircle, label: 'WhatsApp', color: 'hover:bg-primary' },
+  { href: 'https://wa.me/919177418031', icon: MessageCircle, label: 'WhatsApp', color: 'hover:bg-primary' },
 ];
 
 export default function Footer() {
@@ -181,8 +181,8 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-3 group">
                 <Phone className="w-4 h-4 flex-shrink-0 text-gray-400 transition-colors" />
-                <a href="tel:+919441116552" className="text-sm text-gray-300 hover:text-white transition-colors">
-                  +91 9441116552
+                <a href="tel:+919177418031" className="text-sm text-gray-300 hover:text-white transition-colors">
+                  +91 9177418031
                 </a>
               </li>
               <li className="flex items-center gap-3 group">
