@@ -1,7 +1,7 @@
 'use client';
 
-import { useState, useCallback, useEffect } from 'react';
-import { Send, CheckCircle, User, Mail, Phone, MessageSquare, Sparkles, Loader2 } from 'lucide-react';
+import { useState, useCallback } from 'react';
+import { Send, CheckCircle, User, Mail, Phone, MessageSquare, Loader2 } from 'lucide-react';
 
 const subjectOptions = [
   { value: 'general', label: 'General Inquiry' },
@@ -97,7 +97,6 @@ export default function ContactForm() {
     const validationErrors = validateAll();
     if (Object.keys(validationErrors).length > 0) {
       setErrors(validationErrors);
-      // Scroll to first error
       const firstErrorField = Object.keys(validationErrors)[0];
       const element = document.getElementById(firstErrorField);
       if (element) {
@@ -109,22 +108,26 @@ export default function ContactForm() {
 
     setLoading(true);
     try {
-      // Simulate API call
-      await new Promise(resolve => setTimeout(resolve, 1500));
-      
-      // Uncomment for actual API
-      // const res = await fetch('/api/contact', {
-      //   method: 'POST',
-      //   headers: { 'Content-Type': 'application/json' },
-      //   body: JSON.stringify(formData),
-      // });
-      // const data = await res.json();
-      // if (!res.ok) throw new Error(data.error || 'Submission failed');
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await res.json();
+
+      if (!res.ok) {
+        throw new Error(data.error || "Submission failed");
+      }
       
       setSubmitted(true);
       setFormData({ name: '', email: '', phone: '', subject: 'general', message: '' });
       setErrors({});
       setTouched({});
+      
+      // Auto-hide success message after 5 seconds
       setTimeout(() => setSubmitted(false), 5000);
     } catch (err) {
       setError(err.message || 'Failed to submit. Please try again.');
@@ -132,6 +135,8 @@ export default function ContactForm() {
       setLoading(false);
     }
   };
+
+  // ... rest of your form JSX (same as before)
 
   const baseInputClasses = 
     'w-full bg-white dark:bg-gray-800/80 backdrop-blur-sm border-2 rounded-xl pl-11 pr-4 py-3.5 text-sm text-gray-900 dark:text-white placeholder:text-gray-400/60 dark:placeholder:text-gray-500/60 outline-none transition-all duration-300';
@@ -186,7 +191,7 @@ export default function ContactForm() {
             Thank you for reaching out to Manyam Foods. Our team will review your enquiry and get back to you within 24 hours.
           </p>
           <div className="mt-6 flex items-center justify-center gap-2 text-sm text-emerald-600 dark:text-emerald-400">
-            <Sparkles className="w-4 h-4" />
+         
             <span>We'll be in touch soon!</span>
           </div>
         </div>
