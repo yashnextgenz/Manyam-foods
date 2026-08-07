@@ -27,6 +27,9 @@ export default function Template({ children }) {
       animate="animate"
     >
       {children}
+
+
+      
     </motion.div>
   );
 }
